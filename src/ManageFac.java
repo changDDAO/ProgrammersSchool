@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-class Solution {
+class ManageFac {
     public long solution(int goal, int[] durations) {
         long answer;
         int targetTime = findTime(goal, durations);
