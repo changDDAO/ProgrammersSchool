@@ -1,3 +1,5 @@
+package ProgrammersOneWeek;
+
 public class MagicElev {
     public int solution(int storey) {
         //현재 문제에서 기준이 되는 값은 절댓값 10의 배수이다.
