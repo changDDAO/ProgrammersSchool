@@ -1,3 +1,5 @@
+package ProgrammersOneWeek;
+
 class Gijikook {
     public int solution(int n, int[] stations, int w) {
         //제한사항에 stations 배열은 오름차순으로 정렬돼있으므로 고려x
