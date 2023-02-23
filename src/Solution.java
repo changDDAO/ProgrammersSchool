@@ -1,24 +1,11 @@
-<<<<<<< HEAD
-import java.util.Arrays;
-
-class Solution {
-    public int solution(int[] people, int[] tshirts) {
-        int answer = 0;
-        Arrays.sort(people);
-        Arrays.sort(tshirts);
-        int tIndex = tshirts.length-1;
-        for (int i = people.length - 1; i >= 0&&tIndex>=0; i--) {
-            if (tshirts[tIndex] >= people[i]) {
-                answer++;
-                tIndex--;
-            }
-        }
-        return answer;
-=======
+import java.util.*;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
+
+
+
 
 class Customer {
     String name;
@@ -58,8 +45,8 @@ class Solution {
         List<String> cName = new ArrayList<>();
         int curTime = Math.min(bookedCustomer.peek().getArrivedTime(), unbookedCustomer.peek().getArrivedTime());
         while (!bookedCustomer.isEmpty() || !unbookedCustomer.isEmpty()) {
-            if (bookedCustomer.isEmpty()){
-                for(Customer c: unbookedCustomer)cName.add(c.getName());
+            if (bookedCustomer.isEmpty()) {
+                for (Customer c : unbookedCustomer) cName.add(c.getName());
                 break;
             }
 
@@ -80,7 +67,7 @@ class Solution {
                     cName.add(c.getName());
                     curTime = c.getArrivedTime() + 10;
                 } else {
-                     c= unbookedCustomer.poll();
+                    c = unbookedCustomer.poll();
                     cName.add(c.getName());
                     curTime = c.getArrivedTime() + 10;
                 }
@@ -88,6 +75,6 @@ class Solution {
 
         }
         return cName.toArray(String[]::new);
->>>>>>> origin/master
+
     }
 }
