@@ -3,11 +3,10 @@ package ProgrammersThreeWeek;
 import java.util.LinkedList;
 import java.util.Queue;
 
-
 public class BFS_game {
     class CurPos {
-        private  int x;
-        private  int y;
+        private int x;
+        private int y;
 
         public CurPos(int x, int y) {
             this.x = x;
@@ -53,7 +52,7 @@ public class BFS_game {
                 CurPos nextPos = new CurPos(curPos1.getX()+nextPosList[i][0],curPos1.getY()+nextPosList[i][1]);
                 //if(!visited[nextPos.getX()][nextPos.getY()]&&nextPos.canGo(mapHeight,mapWidth))
                 //가독성이 너무 떨어져서 따로 처리하기
-                if(!nextPos.canGo(mapWidth,mapHeight))continue;// 다음 포지션이 갈수없다면(map 범위를 넘어가는 경우)반복문 다시 순회
+                if(!nextPos.canGo(mapHeight,mapWidth))continue;// 다음 포지션이 갈수없다면(map 범위를 넘어가는 경우)반복문 다시 순회
                 if(visited[nextPos.getX()][nextPos.getY()])continue;
                 if(maps[nextPos.getX()][nextPos.getY()]==0)continue; //다음 포지션이 갈수없다면(벽인 경우)
                 count[nextPos.getX()][nextPos.getY()]=curCnt+1;
