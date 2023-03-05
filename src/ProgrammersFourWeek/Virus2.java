@@ -1,6 +1,8 @@
+package ProgrammersFourWeek;
+
 import java.util.*;
 
-public class Solution2 {
+public class Virus2 {
     class Cell{
         int row;
         int column;
