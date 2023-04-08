@@ -3,16 +3,19 @@ import java.util.stream.Collectors;
 
 public class Solution2 {
     public static void main(String[] args) {
-        int[] nums = {1, 2, 3};
-        String temp = Arrays.stream(nums).mapToObj(String::valueOf).collect(Collectors.joining());
-        String answer = Arrays.stream(temp.split("")).sorted((a, b) -> b.compareTo(a)).collect(Collectors.joining());
-        System.out.println(answer);
+       String s = "changho";
+        System.out.println(s.substring(0,1));
+        StringBuilder sb = new StringBuilder(s);
+        s = sb.reverse().toString();
 
-        String s = "changho";
-        String[] sArray = s.split("");
-        String answer1 = Arrays.stream(sArray).sorted((a, b) -> b.compareTo(a)).collect(Collectors.joining());
-        System.out.println(answer1);
-
+        String [] temp = s.split("");
+        for (int i = 0; i < temp.length; i+=3) {
+            for (int j = i; j < j + 3; j++) {
+                if(j== temp.length-1)return;
+                System.out.print(temp[j]);
+            }
+            System.out.println();
+        }
 
     }
 }
