@@ -7,10 +7,13 @@ public class StringTest {
 //            s=s.replace("chang","1");
         StringBuilder sb = new StringBuilder(s);
         String temp = sb.substring(4).toString();
-        String a = "281";
+        String a = "281222";
         String b = "291";
         int res = a.compareTo(b);
         System.out.println(res);
+        System.out.println(a.indexOf('2',2));
+        s.co
+
 
     }
 }
