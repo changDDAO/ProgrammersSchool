@@ -12,7 +12,7 @@ public class StringTest {
         int res = a.compareTo(b);
         System.out.println(res);
         System.out.println(a.indexOf('2',2));
-        s.co
+
 
 
     }
