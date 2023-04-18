@@ -1,6 +1,8 @@
 package lv1;
 
+import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.List;
 import java.util.PriorityQueue;
 
 public class SimpleTest {
@@ -13,6 +15,12 @@ public class SimpleTest {
         pq.offer(2);
         pq.offer(5);
         pq.offer(1);
+        List<Integer> numList = new ArrayList<>();
+        numList.add(3);
+        numList.add(4);
+        System.out.println("num "+numList.size());
+        numList.clear();
+        System.out.println(numList.size());
 
 
         Integer remove = pq.remove();
