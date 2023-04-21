@@ -10,8 +10,10 @@ public class StringTest {
         String a = "281222";
         String b = "291";
         int res = a.compareTo(b);
-        System.out.println(res);
-        System.out.println(a.indexOf('2',2));
+
+
+        a = a.replace("2","3");
+        System.out.println(a);
 
 
 
