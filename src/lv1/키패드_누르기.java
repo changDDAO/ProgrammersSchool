@@ -13,15 +13,15 @@ public class 키패드_누르기 {
             if(num==0)num=11;
             int pos = num%3;
             switch(pos){
-                case 0 -> {
+                case 0:
                     sb.append("R");
                     right = num;
-                }
-                case 1 -> {
+                    break;
+                case 1:
                     sb.append("L");
                     left = num;
-                }
-                case 2 ->{
+                    break;
+                case 2:
                     int fromL = Math.abs(left-num)/3+Math.abs(left-num)%3;
                     int fromR = Math.abs(right-num)/3+Math.abs(right-num)%3;
                     if(fromL<fromR){
@@ -36,10 +36,11 @@ public class 키패드_누르기 {
                         if(temp.equals("L"))left = num;
                         else right = num;
                     }
+                    break;
 
                 }
             }
-        }
+
         return sb.toString();
     }
 }
