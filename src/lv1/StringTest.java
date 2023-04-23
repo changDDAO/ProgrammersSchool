@@ -2,18 +2,16 @@ package lv1;
 
 public class StringTest {
     public static void main(String[] args) {
-        String s = "changho";
-//        if(s.contains("chang"))
-//            s=s.replace("chang","1");
-        StringBuilder sb = new StringBuilder(s);
-        String temp = sb.substring(4).toString();
-        String a = "281222";
-        String b = "291";
-        int res = a.compareTo(b);
+        String s = "changhz";
+
+        if(s.contains("c")) System.out.println("yes");
+
+        char[] temp = s.toCharArray();
+        Character a = 'a';
+        System.out.println(Character.valueOf(a.charValue()));
+        System.out.println((temp[temp.length-1]-'a'));
 
 
-        a = a.replace("2","3");
-        System.out.println(a);
 
 
 
