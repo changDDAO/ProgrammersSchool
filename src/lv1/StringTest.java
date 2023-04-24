@@ -11,6 +11,12 @@ public class StringTest {
         System.out.println(Character.valueOf(a.charValue()));
         System.out.println((temp[temp.length-1]-'a'));*/
         System.out.println(s.indexOf('k'));
+        String a = "A.b.C";
+        String [] b =a.split("\\.");
+        for (String s1 : b) {
+            System.out.println("s1 = " + s1);
+
+        }
 
 
     }
