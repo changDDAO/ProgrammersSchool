@@ -6,15 +6,11 @@ public class StringTest {
 
         if(s.contains("c")) System.out.println("yes");
 
-        char[] temp = s.toCharArray();
+/*        char[] temp = s.toCharArray();
         Character a = 'a';
         System.out.println(Character.valueOf(a.charValue()));
-        System.out.println((temp[temp.length-1]-'a'));
-
-
-
-
-
+        System.out.println((temp[temp.length-1]-'a'));*/
+        System.out.println(s.indexOf('k'));
 
 
     }
