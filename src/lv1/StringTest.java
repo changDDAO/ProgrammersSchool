@@ -2,21 +2,21 @@ package lv1;
 
 public class StringTest {
     public static void main(String[] args) {
-        String s = "changho";
-//        if(s.contains("chang"))
-//            s=s.replace("chang","1");
-        StringBuilder sb = new StringBuilder(s);
-        String temp = sb.substring(4).toString();
-        String a = "281222";
-        String b = "291";
-        int res = a.compareTo(b);
+        String s = "changhz";
 
+        if(s.contains("c")) System.out.println("yes");
 
-        a = a.replace("2","3");
-        System.out.println(a);
+/*        char[] temp = s.toCharArray();
+        Character a = 'a';
+        System.out.println(Character.valueOf(a.charValue()));
+        System.out.println((temp[temp.length-1]-'a'));*/
+        System.out.println(s.indexOf('k'));
+        String a = "A.b.C";
+        String [] b =a.split("\\.");
+        for (String s1 : b) {
+            System.out.println("s1 = " + s1);
 
-
-
+        }
 
 
     }
