@@ -17,7 +17,7 @@ class Login {
             if(hashMap.get(id_pw[0]).equals(id_pw[1])) {
                 return "login";
             }else {
-                return "wrong pw";
+                return "wrong pw type new pw";
             }
         }else {
             return "fail";
